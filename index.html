@@ -1,0 +1,92 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Futurise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.16.0/css/ol.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+    <script src="http://openlayers.org/en/v3.16.0/build/ol.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<header>    
+    <!--    Made by Erik Terwan    -->
+    <!--   24th of November 2015   -->
+    <!--    All rights reserved    -->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="havkart.html"><li>Home</li></a>
+          <a href="http://klimastiftelsen.no/historikk/"><li>About</li></a>
+          <a href="http://klimastiftelsen.no/om-oss/vedtekter/"><li>Info</li></a>
+          <a href="#"><li>Contact</li></a> 
+          
+        </ul>
+      </div>
+    </nav>
+    
+    <h1>Futurise</h1>
+    <h2 id="fremtidenKartlagt"><i>Fremtiden kartlagt</i></h2>
+    </header>
+    
+ <div id="modalBtn" class="modalBtn" type="button">Innstillinger</div>   
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Modal header</h2>
+            </div>
+            <div class="modal-body">
+                <label>
+                    Sea level
+                    <input id="level" type="range" step="0.1" min="0" max="40" value="0" /> +
+                    <span id="output"></span> m
+                </label>
+                <br>
+                <button id="lightest">Find min/max elevation</button>
+                <button class="btn btn-increment">Increment</button>
+                <button class="btn btn-decrement">Decrement</button>
+                <div id="scale"></div>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal footer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quisquam ipsum, ut sunt ex numquam illum sapiente unde omnis esse mollitia dolore! Optio animi ipsa quia sit distinctio ullam cumque.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="map" class="map"></div>
+        <div id="info"></div>
+
+    
+    
+
+    <script src="main.js"></script>   
+</body>
+</html>

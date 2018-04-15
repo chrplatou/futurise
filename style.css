@@ -1,0 +1,359 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #282828;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color: #282828;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+/*
+ * Hamburger menu
+ * 
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 50%;
+  font-family: 'Alike', serif;
+
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #282828;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #282828;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  border: 1px solid black;
+  
+  background: #d9d9db;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* END OF MENU */
+
+h1{
+  text-align: center;
+  color: #282828;
+  font-size: 2.1em;
+  margin-top: -5px;
+}
+
+#fremtidenKartlagt {
+  text-align: center;
+  font-size: 1em;
+  color: #282828;
+  margin-top: -30px;
+}
+
+header {
+  height: 85px;
+  background-color: #d9d9db;
+  padding-bottom: 20px;
+  margin-top: -15px;
+}
+
+/* map */ 
+.map {
+  height: 83vh;
+  width: 99.9%;
+  border-bottom: solid 1px white;
+  margin-top: 1px;
+}
+
+/* END map */
+
+#info {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  visibility: all;
+}
+
+/* slider */
+#level {
+  margin-top: -7px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  width: 20%;
+  height: 20px;
+  background: #1f1f13;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border: 1px solid #fff; 
+}
+
+#level:hover {
+  opacity: 1;
+}
+
+#level::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 19px;
+  background: coral;
+  cursor: pointer;
+}
+
+#level::-moz-range-thumb {
+  width: 20px;
+  height: 19px;
+  background: coral;
+  cursor: pointer;
+}
+
+/* end slider */
+
+label {
+  margin-left: 20px;
+}
+
+#seaLevel{
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+a, h1, p, button {
+  font-family: 'Khula', sans-serif;
+}
+
+/* Button for finding highest/lowest point */
+button {
+  margin-left: 5px;
+  padding-top: 0.2em;
+  border: solid 1px #d9d9db;
+  border-radius: 10px;  
+  background-color: #282828;
+  color: #d9d9db;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+
+}
+
+#modalBtn {
+  margin-top: 120px;
+  margin-left: -30px;
+  border: solid 1px #d9d9db;
+  border-radius: 10px;  
+  background-color: #769ac3;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 90px;
+  z-index: 5;
+
+  transform: rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -ms-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  -webkit-transform:rotate(-90deg);
+}
+
+#modalBtn:hover {
+  background-color: #496687; 
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  margin-top: 120px;
+  margin-left: 50px;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 5px 8px 0 rgba(0,0,0,0.2), 0 5px 8px 0 rgba(0,0,0,0.2), 0 5px 8px 0 rgba(0,0,0,0.2);
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+}
+
+.modal-header{
+  background: coral;
+  color: white;
+  padding: 20px;
+}
+
+.modal-body {
+  padding: 20px;
+  color: black;
+}
+
+.modal-footer {
+  padding: 20px;
+  color: black;
+}
+
+.closeBtn {
+  float: right;
+  color: black;
+  font-size: 25px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen{
+  from{opacity: 0}
+  to{opacity: 1}
+}
