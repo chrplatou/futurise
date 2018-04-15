@@ -1,6 +1,6 @@
 body
 {
-  margin: 0;
+  margin: 0px 0px 0px 0px;
   padding: 0;
   
   /* make it look decent enough */
@@ -40,7 +40,7 @@ a:hover
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 15px;
   width: 50%;
   font-family: 'Alike', serif;
 
@@ -78,7 +78,7 @@ a:hover
   margin-bottom: 5px;
   position: relative;
   
-  background: #282828;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -178,15 +178,15 @@ h1{
 #fremtidenKartlagt {
   text-align: center;
   font-size: 1em;
-  color: #282828;
+  color: white;
   margin-top: -30px;
 }
 
 header {
   height: 85px;
-  background-color: #d9d9db;
+  background-color: #6992B2;
   padding-bottom: 20px;
-  margin-top: -15px;
+  margin-top: -19px;
 }
 
 /* map */ 
@@ -194,7 +194,7 @@ header {
   height: 83vh;
   width: 99.9%;
   border-bottom: solid 1px white;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 
 /* END map */
@@ -251,8 +251,9 @@ label {
   margin-top: 15px;
 }
 
-a, h1, p, button {
+a, h1, p, button, h2 {
   font-family: 'Khula', sans-serif;
+  color: white;
 }
 
 /* Button for finding highest/lowest point */
@@ -279,7 +280,7 @@ button:hover {
   margin-top: 140px;
   margin-left: -27px;
   border: solid 1px #d9d9db;
-  border-radius: 10px;  
+  border-radius: 0px;  
   background-color: #769ac3;
   color: white;
   text-decoration: none;
@@ -357,3 +358,4 @@ button:hover {
   from{opacity: 0}
   to{opacity: 1}
 }
+
