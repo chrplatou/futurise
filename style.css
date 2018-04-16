@@ -236,14 +236,14 @@ header {
   -webkit-appearance: none;
   width: 20px;
   height: 19px;
-  background: coral;
+  background: #6992B2;
   cursor: pointer;
 }
 
 #level::-moz-range-thumb {
   width: 20px;
   height: 19px;
-  background: coral;
+  background: #6992B2;
   cursor: pointer;
 }
 
