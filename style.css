@@ -115,7 +115,7 @@ a:hover
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #282828;
+  background: white;
 }
 
 /*
@@ -236,14 +236,14 @@ header {
   -webkit-appearance: none;
   width: 20px;
   height: 19px;
-  background: coral;
+  background: #6992B2;
   cursor: pointer;
 }
 
 #level::-moz-range-thumb {
   width: 20px;
   height: 19px;
-  background: coral;
+  background: #6992B2;
   cursor: pointer;
 }
 
@@ -334,7 +334,7 @@ button:hover {
 }
 
 .modal-header{
-  background: coral;
+  background: #6992B2;
   color: white;
   padding: 20px;
 }
@@ -346,6 +346,10 @@ button:hover {
 
 .modal-footer {
   padding: 20px;
+  color: black;
+}
+
+.modal-footer p {
   color: black;
 }
 
