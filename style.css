@@ -115,7 +115,7 @@ a:hover
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #282828;
+  background: white;
 }
 
 /*
