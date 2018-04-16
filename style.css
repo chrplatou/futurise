@@ -185,8 +185,9 @@ h1{
 header {
   height: 85px;
   background-color: #6992B2;
-  padding-bottom: 20px;
-  margin-top: -19px;
+  top: 0;
+  left: 0;
+  right:;
 }
 
 /* map */ 
@@ -361,10 +362,12 @@ button:hover {
 
 
 /*################################################################################
-                                            Om prosjektet
+                                  Om prosjektet
 ##################################################################################*/
 footer {
-  position: fixed;
-  height: 20px;
-  color: #6992B2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: #6992B2;
 }
