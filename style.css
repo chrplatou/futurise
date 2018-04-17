@@ -85,7 +85,7 @@ a:hover
   margin-bottom: 5px;
   position: relative;
   
-  background: white;
+  background: grey;
   border-radius: 3px;
   
   z-index: 1;
@@ -191,9 +191,16 @@ h1{
 
 header {
   height: 85px;
-  background-color: #6992B2;
+  background-color: white;
   top: 0;
   left: 0;
+}
+
+#logo {
+  width: 22%;
+  height: auto;
+  margin-left: 80vh;
+  margin-top: -6vh;
 }
 
 /* map */ 
