@@ -4,7 +4,7 @@ body
   padding: 0;
   
   /* make it look decent enough */
-  background: #282828;
+  background: grey;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -43,7 +43,7 @@ a
 {
   display: block;
   position: relative;
-  top: 50px;
+  top: 34px;
   left: 15px;
   width: 50%;
   font-family: 'Alike', serif;
@@ -82,7 +82,7 @@ a
   margin-bottom: 5px;
   position: relative;
   
-  background: white;
+  background: grey;
   border-radius: 3px;
   
   z-index: 1;
@@ -176,14 +176,14 @@ h1{
   text-align: center;
   color: #282828;
   font-size: 2.1em;
-  margin-top: -5px;
+  margin-top: -20px;
 }
 
-#fremtidenKartlagt {
+header h2 {
   text-align: center;
   font-size: 1em;
   color: white;
-  margin-top: -30px;
+  margin-top: -33px;
 }
 
 .tittel {
@@ -192,16 +192,29 @@ h1{
 
 header {
   height: 85px;
-  background-color: #6992B2;
+  background-color: white;
   top: 0;
   left: 0;
 }
 
+#logo {
+  width: 20em;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -45px;
+}
+
 /* map */ 
 .map {
-  height: 91vh;
+  height: 88vh;
   width: 99.9%;
+<<<<<<< HEAD
   
+=======
+  border-bottom: solid 1px white;
+>>>>>>> a5a5a578d370a543caed3cfbdc499a1e91ed86b9
   margin-top: 2px;
 }
 
@@ -386,13 +399,35 @@ footer {
 
 .textbox {
   text-align: center;
-display: inline-block; 
-width: 50%;
-height: 50%;
-background-color: white;
-opacity: 0.9;
-margin-left: 25%;
-margin-top: 9%;
-position: absolute;
+  display: inline-block; 
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  opacity: 0.9;
+  margin-left: 25%;
+  margin-top: 9%;
+  position: absolute;
+}
 
+.textbox p, h3{
+  color: black;
+}
+
+
+/*################################################################################
+                                  Kontakt
+##################################################################################*/
+
+.textbox-kontakt {
+  color: black;
+  text-align: center;
+  display: inline-block; 
+  width: 50%;
+  height: 50%;
+  background-color: lightgrey;
+  color: black;
+  opacity: 0.8;
+  margin-left: 25%;
+  margin-top: 9%;
+  position: absolute;
 }
