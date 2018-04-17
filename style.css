@@ -199,7 +199,9 @@ header {
 #logo {
   width: 20em;
   height: auto;
-  margin-left: 78vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: -45px;
 }
 
