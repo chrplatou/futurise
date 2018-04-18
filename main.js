@@ -374,12 +374,12 @@ function outsideClick(e) {
     }
 }
 
-document.getElementById("play").onclick = function () {
+/**document.getElementById("play").onclick = function () {
     console.log("Hei")
 };
-
+**/
 var slider = document.getElementById("range");
-var rangeOut = document.getElementById("aarstall");
+var rangeOut = document.getElementById("tall");
 rangeOut.innerHTML = slider.value;
 
 slider.oninput = function() {
