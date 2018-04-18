@@ -377,3 +377,11 @@ function outsideClick(e) {
 document.getElementById("play").onclick = function () {
     console.log("Hei")
 };
+
+var slider = document.getElementById("range");
+var rangeOut = document.getElementById("tall");
+rangeOut.innerHTML = slider.value;
+
+slider.oninput = function() {
+  rangeOut.innerHTML = this.value;
+};
