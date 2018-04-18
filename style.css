@@ -229,7 +229,7 @@ header {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 25px;
-    height: 6.5em;
+    height: 11.3vh;
     background: #769ac3;
     opacity: 1;
     cursor: pointer;
@@ -475,18 +475,25 @@ footer {
 }
 
 .textbox {
-  text-align: center;
-  display: inline-block; 
-  width: 50%;
-  height: 50%;
+  text-align: center; 
+  width: 35%;
+  height: 45%;
   background-color: white;
   opacity: 0.9;
-  margin-left: 25%;
   margin-top: 9%;
-  position: absolute;
+  position: fixed;
+  margin-left: 32%;
+  font-size: 1.05em; 
 }
 
 .textbox p, h3{
   color: black;
+}
+
+.textblock {
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 5%;
+
 }
 
