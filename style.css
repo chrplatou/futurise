@@ -191,7 +191,7 @@ header h2 {
 }
 
 header {
-  height: 85px;
+  height: 10vh;
   background-color: white;
   top: 0;
   left: 0;
@@ -267,7 +267,7 @@ header {
 */
 /* map */ 
 .map {
-  height: 88vh;
+  height: 89.7vh;
   width: 99.9%;
 
   
