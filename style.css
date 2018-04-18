@@ -210,13 +210,13 @@ header {
 
 .slider {
   -webkit-appearance: none;
-    width: 99%;
+    width: 83%;
     height: 6em;
     background: rgba(0, 0, 0, 0);
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    left: 0;
+    margin-left: 6%;
    top: 0;
     position: absolute;
     
@@ -230,8 +230,8 @@ header {
     appearance: none;
     -webkit-appearance: none;
     width: 25px;
-    height: 6em;
-    background: red;
+    height: 6.5em;
+    background: #769ac3;
     opacity: 1;
     cursor: pointer;
 
