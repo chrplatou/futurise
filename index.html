@@ -50,15 +50,40 @@
     </nav>
     
 
-    <h1 class="tittel">Futurise</h1>
-    <h2 class="tittel" id="fremtidenKartlagt"><i>Fremtiden kartlagt</i></h2>
 
 
+    
    <img id="logo" src="logo.png">
+
+   <p class="aarstall">Årstall: <span id="tall"></span></p>
+
+    <div class="slidecontainer">
+        <input type="range" min="2018" max="2100" value="50" class="slider" id="range">
+    </div>
+
+<script>
+var slider = document.getElementById("range");
+var rangeOut = document.getElementById("tall");
+rangeOut.innerHTML = slider.value;
+
+slider.oninput = function() {
+  rangeOut.innerHTML = this.value;
+}
+
+
+
+$("#play").click(function(){
+    console.log('hei')
+})
+</script>
 
 
 
     </header>
+
+
+   <button id="play">Play</button>
+
     
  <div id="modalBtn" class="modalBtn" type="button">Innstillinger</div>   
 
