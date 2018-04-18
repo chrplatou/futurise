@@ -227,8 +227,8 @@ header {
 }
 
 .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
     width: 25px;
     height: 6em;
     background: red;

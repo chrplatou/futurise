@@ -373,3 +373,7 @@ function outsideClick(e) {
         modal.style.display = 'none';
     }
 }
+
+document.getElementById("play").onclick = function () {
+    console.log("Hei")
+};

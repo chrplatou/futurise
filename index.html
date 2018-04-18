@@ -68,14 +68,10 @@ rangeOut.innerHTML = slider.value;
 
 slider.oninput = function() {
   rangeOut.innerHTML = this.value;
-}
+};
 
 
 
-$(".play").click(function() {
-    console.log('hei')
-    rangeOut.innerHTML = "hei"
-})
 </script>
 
 
@@ -101,7 +97,7 @@ $(".play").click(function() {
                     <span id="output"></span> m
                 </label>
                 <br>
-                   <button class="play">Play</button>
+                   <button id="play">Play</button>
                 <button id="lightest">Find min/max elevation</button>
                 <button class="btn btn-increment">Increment</button>
                 <button class="btn btn-decrement">Decrement</button>
