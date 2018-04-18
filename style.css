@@ -292,7 +292,7 @@ header {
   margin-top: -7px;
   cursor: pointer;
   -webkit-appearance: none;
-  width: 50%;
+  width: 40%;
   height: 20px;
   background: #1f1f13;
   outline: none;
@@ -399,8 +399,8 @@ button:hover {
   position: absolute;
   left:0;
   top:0;
-  width: 35%;
-  max-height: 1%;
+  width: 25%;
+  
  
   margin-top: 186px;
   margin-left: 50px;
@@ -452,7 +452,7 @@ button:hover {
 }
 
 .knapper {
-  margin-top: -210px;
+  margin-top: -230px;
 
 }
 

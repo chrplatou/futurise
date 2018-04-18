@@ -379,9 +379,11 @@ document.getElementById("play").onclick = function () {
 };
 
 var slider = document.getElementById("range");
-var rangeOut = document.getElementById("tall");
+var rangeOut = document.getElementById("aarstall");
 rangeOut.innerHTML = slider.value;
 
 slider.oninput = function() {
   rangeOut.innerHTML = this.value;
 };
+
+
