@@ -373,3 +373,15 @@ function outsideClick(e) {
         modal.style.display = 'none';
     }
 }
+
+document.getElementById("play").onclick = function () {
+    console.log("Hei")
+};
+
+var slider = document.getElementById("range");
+var rangeOut = document.getElementById("tall");
+rangeOut.innerHTML = slider.value;
+
+slider.oninput = function() {
+  rangeOut.innerHTML = this.value;
+};
